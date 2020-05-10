@@ -2,11 +2,11 @@
 
 namespace Generics
 {
-    // where T : IComparable
-    // where T : Product
-    // where T : struct
-    // where T : class
-    // where T : new()
+    // where T : IComparable 
+    // where T : Product -> children/sub class
+    // where T : struct -> value type
+    // where T : class -> reference type
+    // where T : new() -> obj default constructor
     public class Utilities<T> where T : IComparable, new()
     {
         public int Max(int a, int b)
